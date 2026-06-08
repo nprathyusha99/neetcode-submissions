@@ -1,0 +1,18 @@
+class Solution {
+    public int[] getConcatenation(int[] nums) {
+        int[] ans = new int[nums.length*2];
+        int i =0;
+        int k =0;
+        while(i<ans.length){
+            if(i<nums.length){
+                ans[i] = nums[i];
+            }
+            else{
+                ans[i] = nums[k];
+                k++;
+            }
+            i++;
+        }
+    return ans;
+    }
+}
